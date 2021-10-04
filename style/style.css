@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, a, img, form, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	background: url(../img/rwlx.png) no-repeat;
+	background-size: cover;
+	font-family: "微软雅黑";
+}
+.bannerwrap {
+	background: rgb(242, 242, 242);
+	width: 100%;
+	margin-top: 200px;
+	margin-bottom: 20px;
+}
+.banner {
+	background: url(../images/theme-pic.jpg) no-repeat;
+	width: 1000px;
+	position: relative;
+	height: 478px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.login-aside {
+	width: 250px;
+	height: 320px;
+	position: absolute;/*绝对定位*/
+	z-index: 9999999;/*使登录框的层级在最顶端*/
+	left: 60%;
+	top: 40px;
+	border: 1px #CCCCCC solid;
+	border-radius: 5px;/*边框设置为圆角*/
+	background-color: #FFF;
+	padding: 20px 15px 20px;
+}
+.registerform {
+	margin-bottom: 40px;
+}
+label.form-label {
+	display: block;
+	line-height: 14px;
+	text-align: left;
+	width: auto;
+	font-size: 16px;
+	color: #333;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+.i-text {
+	width: 240px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #858585;
+	background: #FAFAFA;
+	color: #9cb5cd;
+	font-size: 14px;
+	padding-left: 5px;
+}/*设置文本框表单的外观和里面文字的样式*/
+.pos-r {
+	position: relative;
+}
+.yzm {
+	width: 112px;
+}/*设置验证码表单的宽度*/
+.yzm-img {
+	position: absolute;
+	left: 130px;
+	top: 30px;
+	cursor: pointer;
+}/*设置验证码图像的位置*/
+.btn-login {
+	width: 240px;
+	height: 38px;
+	background: url(../images/login-btn.png) no-repeat;
+	border: none;
+	margin-top: 5px;
+}/*用图片当做背景，设置登录按钮的外观*/
+.fm-item {
+	margin-top: 20px;
+}

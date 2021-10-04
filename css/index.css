@@ -1,0 +1,185 @@
+body{
+	font:normal 14px 'Arial';
+}
+ul{/*设置页面中所有的ul的公共样式*/
+	list-style:none;
+	text-align:left;
+	margin:0;/*ul默认存在14px的上、下外边距*/
+	padding:0;
+}
+a{/*设置页面中所有的a的公共样式*/
+	text-decoration:none;
+	color:#000;
+}
+/*头部样式*/
+
+
+/*主体内容样式*/
+.main{
+	width:1060px;
+	margin:0 auto;
+}
+/*主体内容中的更多超链接公共样式*/
+.more{/*设置更多链接所在盒子样式*/
+	text-align:right;
+	padding:10px;
+}
+.more a{/*设置更多链接样式*/
+	color:#666;
+}
+/*主体第一块内容样式*/
+.fst{
+	width:100%;
+	height:260px;
+}
+.fst h3{
+	color:#900;
+	text-align:left;
+	padding-bottom:5px;
+	border-bottom:3px solid #900;
+	margin-bottom:0;
+}
+
+.left{/*设置华软要闻的图文内容所在盒子的样式*/
+	float:left;
+	width:620px;
+}
+.photo{/*设置华软要闻的图片所在盒子向左浮动*/
+	float:left;
+}
+.photo img{/*设置华软要闻的图片的宽度和高度*/
+	width:300px;
+	height:180px;
+}
+.txt{/*设置华软要闻中的文本链接所在盒子的样式*/
+	float:left;
+	width:290px;
+	margin-left:10px;
+}
+h4{/*图文内容中的标题*/
+	text-align:left;
+	line-height:26px;
+	color:#900;
+	margin-bottom:0;
+	margin-top:10px;
+}
+.txt p{/*图文内容中的内容样式*/
+	margin-top:0;
+	text-indent:24px;
+	text-align:left;
+	line-height:26px;
+	font-size:12px;
+	color:#999;
+}
+.right{/*华软要闻中的右边的文本链接所在盒子的样式*/
+	float:right;
+	width:410px;
+	text-align:left;
+}
+.right li{
+	padding:10px;
+	border-bottom:1px dotted #CCC;
+}
+/*第二块和第三块主体内容第二块内容的高度*/
+.snd,.thr{
+	height:300px;	
+}
+/*下面三个选择器设置的样式为第二块和第三块主体内容中对应的title盒子及其中的所有子盒子的样式*/
+.title{
+	height:50px;
+	line-height:50px;
+}
+.title h3{
+	float:left;
+	margin:0;
+	color:#900;
+}
+.title a{
+	float:right;
+	margin-right:10px;
+	color:#666;
+}
+/*第二块和第三块主体内容左、右两端的背景颜色和上边框的样式完全一样*/
+.news,.aside{
+	background:#eee;
+	border-top:3px #900 solid;
+}
+.news{
+	float:left;
+	width:610px;
+	background:#eee;
+	padding:0 10px;
+	border-top:3px #930 solid;
+}
+.news li{
+	padding:10px;
+}
+.strong{
+	margin-bottom:20px;
+	border-bottom:1px dotted #CCC;
+}
+.strong span{
+	display:block;
+	line-height:22px;
+	font-size:12px;
+	color:#666;	
+	text-indent:24px;
+	margin:10px;
+}
+.time{
+	float:right;
+	color:#666;
+}
+.aside{
+	float:right;
+	width:420px;
+	height:290px;
+}
+.top{
+	height:110px;
+	width:419px;
+	border-bottom:1px solid #CCC;
+	border-top:1px solid #900;
+}
+.top .left{
+	float:left;
+	height:100px;
+	width:70px;
+	padding:0 15px;
+}
+.top .left img{
+	width:40px;
+	height:60px;
+}
+.top .left span{
+	display:block;
+	margin-top:10px;
+}
+.top .right{
+	float:right;
+	height:110px;
+	width:310px;
+}
+.top .right img{
+	float:right;
+	width:307px;
+	height:109px;
+}
+.aside ul{
+	/*clear:both;*/
+	margin-top:20px;
+}
+.aside ul li{
+	padding:10px 10px 10px 20px;
+}
+footer{/*页脚样式*/
+	padding:10px;
+	background:#5280A9;
+}
+footer a{
+	color:#CCF;
+}
+footer a:hover{
+	color:red;
+}
+

@@ -1,0 +1,78 @@
+@charset "utf-8";
+*{margin: 0;
+			padding: 0;}
+			.clearfix::after{
+				content: ".";
+				display: block;
+				overflow: hidden;
+				visibility: hidden;
+				height: 0;
+				clear:both;
+			}
+			.bankuai{
+				width: 80%;
+				margin: 0px auto;
+				background: pink;
+			}			
+			.tplunbo{
+				width: 100%;
+				position: relative;
+				height: 300px;
+				overflow: hidden;
+				background: url(../img/baiyun2.jfif)  100% 100%;
+			}
+			.tplunbo li{
+				float:left;	
+				list-style: none;
+			}
+			.tupian{
+				width: 9999px;
+				position: absolute;
+				left:0;}
+			.tupian img{
+				max-width: 100%;
+				height: 300px;
+			}
+			.tplunbo .yuandian{
+				position: absolute;
+				bottom: 10px;
+				left:40%;
+			}
+			.tplunbo .yuandian li{
+				margin: 10px;
+				width: 30px;
+				height: 30px;
+				border-radius: 15px;
+				line-height: 30px;
+				text-align: center;
+				background: #ccc;
+				color: #fff;
+				cursor: pointer;
+			}
+			.tplunbo .yuandian li.active{
+				background: #f66;}
+			#qianm,#houmian{
+				position: absolute;
+				top:45%;
+				width: 30px;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				background: rgba(220,220,220,0.8);
+				color: #fff;
+				cursor: pointer;
+			}
+			#qianm{
+				left:10px;
+			}
+			#houmian{
+				right:10px;
+			}
+			.tupian li.active{
+				opacity: 0;
+				animation: chuxian 2s forwards;
+			}
+			@keyframes chuxian{
+				from{opacity: 0;}
+				to{opacity: 1;}
+			}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户登陆页面</title>
+<link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+<div class="bannerwrap">
+  <div class="banner">
+    <div class="login-aside">
+    <form class="registerform" action="jiazai.html">
+        <div>
+          <label for="username" class="form-label">用户名：</label>
+          <input type="text" value="请输入手机号或用户名" maxlength="100" id="username" class="i-text" >
+        </div>
+        <div>
+          <label for="password" class="form-label">密码：</label>
+          <input type="password" class="i-text" id="password" maxlength="100" >
+        </div>
+        <div class="pos-r">
+          <label for="yzm" class="form-label">验证码：</label>
+          <input type="text" value="输入验证码" maxlength="100" id="yzm" class="i-text yzm" nullmsg="请输入验证码！" >
+          <img src="images/yzm.jpg" class="yzm-img" /> </div>
+        <div class="fm-item">
+          <input name="提交" type="submit" class="btn-login" id="send-btn" tabindex="4" value="">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

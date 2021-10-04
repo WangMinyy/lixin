@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>进度条</title>
+		<style>
+		body{
+			background: url(img/xmlx.png);
+			background-size: 100%;
+			background-position: center 35%;
+		}
+		.jingdu{
+			width:70%;
+			margin:130px auto;
+			text-align: center;
+		}
+		.jingdu .jdkuang{
+			width: 600px;			
+			border: red solid 2px;
+			padding: 3px;
+			margin: 60px auto;
+		}
+		.jingdu .jdtiao{
+			background-color: #0000FF;
+			color:#fff;
+			width:0%;
+			height: 40px;
+			line-height: 40px;}
+		.shengyf{
+			display: inline-block;
+			overflow: hidden;
+			white-space:nowrap ;
+			animation: shengyf 1s infinite;
+		}
+		@keyframes shengyf{
+			from{width:270px}
+			to{width:330px;}
+		}
+		.wenzi{
+			width: 330px;
+			text-align: left;
+			display: inline-block;
+		} 
+		</style>
+		<script>	
+			var count=0;
+			var cleasz;	
+		window.onload=function(){			
+			setTimeout(shuzibh,2000);
+		}
+		function shuzibh(){
+			var shz=document.getElementById("jdshuzi");
+			var jdu=document.getElementById("jdtiao");
+			if(count<100)
+			   {count++;
+			    shz.innerHTML=count+'%';
+				jdu.style.width=count+'%';}
+			else
+			{  clearTimeout(cleasz);
+			  setTimeout("window.location='index.html'",5000);		}	
+			 cleasz=setTimeout(shuzibh,100);
+		}
+		
+		</script>
+	</head>
+	<body >
+		<div class="jingdu">
+			<h2><img src="img/lxxx.png" width="200px" height="120px" style="border-radius: 120px;">
+				<div class="wenzi"><span class="shengyf" style="color:#fff">毋忘"立信"，当必有成！&nbsp;……</span>
+				</div>
+			<img src="img/lixinerwm.jpg">
+			</h2>
+			<div class="jdkuang" >
+				<div class="jdtiao" id="jdtiao"><span id="jdshuzi">0%</span></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+.clearfix::after{
+	content:".";
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	display: block;
+	clear:both;
+}
+.whole ul{
+	list-style: none;
+}
+body,header,footer,.container{
+	width: 100%;
+}
+header{
+	background: rgb(51,136,208);
+}
+.toubbj,footer{
+	background: rgb(0,78,145);	
+	
+}
+header a{
+	color:#fff;
+	text-decoration: none;
+}
+header .toubwenz,.toutup,nav{
+	width: 80%;
+	margin: 0 auto;
+}
+.fudongz{
+	float:left;
+}
+.fudongy{
+	float:right;
+}
+.touzuo li,.touyou li{
+	float:left;
+	padding: 6px 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.hongs{
+	color:red;
+}
+.toutup img{
+	margin-top: 10px;	
+	margin-bottom: 15px;
+}
+.toutup {
+	margin-bottom: 10px;
+	border-bottom:1px solid rgba(255,255,255,0.3) ;
+	
+}
+nav{
+	position: relative;
+	z-index: 9999;
+}
+nav li{
+	float:left;
+}
+nav li{
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 16px;
+}
+nav .yiji>li:hover>a{
+	color:orange;
+}
+nav .erji li{
+	background: rgb(90,158,215);
+	border-bottom:  1px solid #666;
+	font-size: 14px;
+}
+nav .erji li:hover a{
+	color:#fff;
+}
+nav .erji li:hover {
+	background-color: rgb(35,136,222);
+}
+nav .erji{
+	display: none;
+}
+nav .yiji>li:hover .erji{
+	display: block;
+}
+footer{
+	text-align: center;
+}
